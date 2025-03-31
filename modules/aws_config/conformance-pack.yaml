@@ -1,0 +1,82 @@
+Resources:
+  Rule1:
+    Type: "AWS::Config::ConfigRule"
+    Properties:
+      ConfigRuleName: "s3-bucket-public-read-prohibited"
+      Source:
+        Owner: "AWS"
+        SourceIdentifier: "S3_BUCKET_PUBLIC_READ_PROHIBITED"
+
+  Rule2:
+    Type: "AWS::Config::ConfigRule"
+    Properties:
+      ConfigRuleName: "iam-user-unused-credentials-check"
+      Source:
+        Owner: "AWS"
+        SourceIdentifier: "IAM_USER_UNUSED_CREDENTIALS_CHECK"
+      InputParameters:
+        maxCredentialUsageAge: 90
+
+  Rule3:
+    Type: "AWS::Config::ConfigRule"
+    Properties:
+      ConfigRuleName: "root-account-mfa-enabled"
+      Source:
+        Owner: "AWS"
+        SourceIdentifier: "ROOT_ACCOUNT_MFA_ENABLED"
+
+  Rule4:
+    Type: "AWS::Config::ConfigRule"
+    Properties:
+      ConfigRuleName: "iam-user-mfa-enabled"
+      Source:
+        Owner: "AWS"
+        SourceIdentifier: "IAM_USER_MFA_ENABLED"
+
+  Rule5:
+    Type: "AWS::Config::ConfigRule"
+    Properties:
+      ConfigRuleName: "cloudtrail-cloudwatch-logs-enabled"
+      Source:
+        Owner: "AWS"
+        SourceIdentifier: "CLOUD_TRAIL_CLOUD_WATCH_LOGS_ENABLED"
+
+  Rule6:
+    Type: "AWS::Config::ConfigRule"
+    Properties:
+      ConfigRuleName: "s3-bucket-logging-enabled"
+      Source:
+        Owner: "AWS"
+        SourceIdentifier: "S3_BUCKET_LOGGING_ENABLED"
+
+  Rule7:
+    Type: "AWS::Config::ConfigRule"
+    Properties:
+      ConfigRuleName: "s3-bucket-public-write-prohibited"
+      Source:
+        Owner: "AWS"
+        SourceIdentifier: "S3_BUCKET_PUBLIC_WRITE_PROHIBITED"
+
+  Rule8:
+    Type: "AWS::Config::ConfigRule"
+    Properties:
+      ConfigRuleName: "s3-bucket-versioning-enabled"
+      Source:
+        Owner: "AWS"
+        SourceIdentifier: "S3_BUCKET_VERSIONING_ENABLED"
+
+  Rule9:
+    Type: "AWS::Config::ConfigRule"
+    Properties:
+      ConfigRuleName: "iam-no-inline-policy-check"
+      Source:
+        Owner: "AWS"
+        SourceIdentifier: "IAM_NO_INLINE_POLICY_CHECK"
+
+  Rule10:
+    Type: "AWS::Config::ConfigRule"
+    Properties:
+      ConfigRuleName: "ebs-optimized-instance"
+      Source:
+        Owner: "AWS"
+        SourceIdentifier: "EBS_OPTIMIZED_INSTANCE"
