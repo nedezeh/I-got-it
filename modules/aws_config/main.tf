@@ -119,4 +119,4 @@ resource "aws_config_conformance_pack" "security_conformance_pack" {
   depends_on = [
     aws_config_configuration_recorder_status.status
   ]
-}
+}  
