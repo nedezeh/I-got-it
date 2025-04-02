@@ -22,10 +22,10 @@ module "aws_config" {
   s3_bucket_name   = "ned2-config-logs-bucket"
 }
 
-module "guardduty" {
-  source = "./modules/guardduty"
-}
+# module "guardduty" {
+#   source = "./modules/guardduty"
+# }
 
-module "securityhub" {
-  source = "./modules/securityhub"
-}
+# module "securityhub" {
+#   source = "./modules/securityhub"
+# }
