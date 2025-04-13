@@ -48,14 +48,14 @@ pipeline {
     // ✅ Post actions: send email notification after pipeline finishes
     post {
         success {
-            mail to: 'johnezeh100@gmail.com',
+            mail to: 'johnezeh100@gmail.com,bayongcharlotte@gmail.com',
                  subject: "Jenkins Job Success: ${env.JOB_NAME} [${env.BUILD_NUMBER}]",
-                 body: "Good news! The Jenkins job '${env.JOB_NAME}' build #${env.BUILD_NUMBER} was successful.\n\n Check Jenkins for more details: ${env.BUILD_URL}"
+                 body: "Good news! The Jenkins job '${env.JOB_NAME}' build #${env.BUILD_NUMBER} was successful.\n\nCheck Jenkins for more details: ${env.BUILD_URL}"
         }
         failure {
-            mail to: 'johnezeh100@gmail.com',
+            mail to: 'johnezeh100@gmail.com,bayongcharlotte@gmail.com',
                  subject: "Jenkins Job Failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]",
-                 body: "Attention! The Jenkins job '${env.JOB_NAME}' build #${env.BUILD_NUMBER} has failed.\n\n Check Jenkins for more details: ${env.BUILD_URL}"
+                 body: "Attention! The Jenkins job '${env.JOB_NAME}' build #${env.BUILD_NUMBER} has failed.\n\nCheck Jenkins for more details: ${env.BUILD_URL}"
         }
     }
 }
