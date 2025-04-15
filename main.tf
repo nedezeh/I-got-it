@@ -28,4 +28,4 @@ module "guardduty" {
 
 module "securityhub" {
   source = "./modules/securityhub"
-}       
+}        
