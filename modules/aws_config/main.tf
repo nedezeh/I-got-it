@@ -119,6 +119,6 @@ resource "aws_config_conformance_pack" "security_conformance_pack" {
   template_body       = file("${path.module}/conformance-pack.yaml")
 
   depends_on = [
-    aws_config_configuration_recorder_status.status
+    aws_config_configuration_recorder_status.status 
   ]
 }     
