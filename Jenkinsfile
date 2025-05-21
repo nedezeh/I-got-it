@@ -58,4 +58,4 @@ pipeline {
                  body: "Attention! The Jenkins job '${env.JOB_NAME}' build #${env.BUILD_NUMBER} has failed.\n\nCheck Jenkins for more details: ${env.BUILD_URL}"
         }
     }
-}
+} 
