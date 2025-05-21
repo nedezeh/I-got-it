@@ -11,7 +11,7 @@ pipeline {
         // Clone GitHub Repo
         stage('Clone Repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/nedezeh/AWS-Security-tool20.git'
+                git branch: 'main', url: 'https://github.com/nedezeh/Ok-go-ahead.git'
             }
         }
 
