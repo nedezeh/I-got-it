@@ -14,7 +14,7 @@ provider "aws" {
 module "cloudtrail" {
   source      = "./modules/cloudtrail"
   bucket_name = "ezeh1-cloudtrail-bucket-2025xyz"
-  trail_name  = "john-cloudtrail"
+  trail_name  = "john-cloudtrail-0521xyz"
 }
 
 module "aws_config" {
