@@ -13,13 +13,13 @@ provider "aws" {
 
 module "cloudtrail" {
   source      = "./modules/cloudtrail"
-  bucket_name = "ezeh1-cloudtrail-bucket"
+  bucket_name = "ezeh1-cloudtrail-bucket-2025xyz"
   trail_name  = "john-cloudtrail"
 }
 
 module "aws_config" {
   source           = "./modules/aws_config"
-  s3_bucket_name   = "ned2-config-logs-bucket"
+  s3_bucket_name   = "ned2-config-logs-bucket-2025xyz"
 }
 
 module "guardduty" {
